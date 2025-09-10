@@ -20,7 +20,7 @@ img {
   width: 200px;
   height: auto;
   padding: 1rem;
-  box-shadow: none;
+  box-shadow: 1px solid #ccc;
 }
 
 main {
