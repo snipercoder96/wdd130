@@ -23,6 +23,9 @@
 nav {
   background-color: var(--blue-color);
   padding: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
 }
 
@@ -31,12 +34,14 @@ nav a {
   color: red;
   padding: 1rem;
   display: block;
+  text-decoration: none;
 }
 
 
 h1 {
   color: var(--custom-color);
   padding: 6rem;
+  border-bottom: var(--blue-color);
 }
 
 img {
@@ -98,4 +103,29 @@ footer {
   float: left;
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+
+header, footer, .grid {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 500px);
+
+
+  main {
+    grid-column: 1 / 2;
+    margin: 0.5em;
+  }
+
+  aside {
+    grid-area: 1 / 2;
+    position: relative;
+
+  }
+
+
+
 }
