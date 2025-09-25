@@ -2,13 +2,17 @@
     --first-color: limegreen;
     --second-color: white;
     --third-color: rgb(71, 192, 232);
-    --fourth-color: lightgrey;
+    --fourth-color: lightgray;
     --fifth-color: orange;
     --body-font: helvetica;
     --black-color: black;
     --header-font: serif;
     --darkgreen: darkgreen;
-    --blue: blue;
+    --blue: rgb(8, 8, 93);
+}
+
+p{
+    line-height: 1.6;
 }
 
 * {
@@ -20,6 +24,12 @@
 body {
     font-family: var(--body-font);
     color: var(--black-color);
+    padding: 20px;
+}
+
+section{
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
 header, main, footer {
@@ -29,7 +39,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--header-font) ;
-    color: var(--darkgreen);
+    color: var(--blue);
 }
 
 nav, p, section, article {
@@ -49,6 +59,7 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 h1 {
@@ -58,7 +69,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--third-color);
+    background-color: rgba(71, 192, 232, 0.85);
     color: var(--blue) ;
 
 }
@@ -67,3 +78,123 @@ h1 {
     float: right;
     width: 125px;
 }
+
+
+/* Display grid */
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: var(--fourth-color);
+    gap: 16px;
+    padding: 8px 16px;
+    padding-bottom: 8px;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    height: 140px;
+    width: 180px;
+
+
+}
+
+footer nav img{
+    
+    height: 3rem;
+    width: 3rem;
+    
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.history-grid h2{
+    grid-column-start: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.history-grid img{
+    grid-column: 2 / 2;
+}
+
+.paragraph1 {
+    text-align: left;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.paragraph2 {
+    text-align: center;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.adventure-section {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.adventure-section img {
+    width: 8rem;
+    height: 8rem;
+    
+}
+
+section h2{
+    text-align: center;
+}
+
+.footer-section {
+    display: grid;
+    background-color: var(--fourth-color);
+    grid-template-columns: 2fr 1fr;
+    
+}
+.paragraph-section{
+    text-align: center;
+}
+
+.adventure{
+    margin-bottom: 3.75rem;
+    padding-bottom: 2.5rem;
+    background-color: lightyellow;
+}
+
+.history{
+    background-color: beige;
+    margin-bottom: 3.75rem;
+}
+
+/*------------------------------------------------------------------------------------*/
+/* CSS link fix */
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue; /* Match unvisited color */
+}
+
+a:hover {
+  color: darkblue;
+}
+
+a:active {
+  color: navy;
+}
+
+
+/*------------------------------------------------------------------------------------*/
