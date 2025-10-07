@@ -8,7 +8,8 @@
     --black-color: black;
     --header-font: serif;
     --darkgreen: darkgreen;
-    --blue: rgb(8, 8, 93);
+    --blue: rgba(8, 8, 93, 0.6);
+    --background-color: #0049B7;
 }
 
 p{
@@ -62,7 +63,7 @@ nav, p, section, article {
     position: relative;
 }
 
-h1 {
+#page-title, .heading-article {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -70,8 +71,12 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: rgba(71, 192, 232, 0.85);
-    color: var(--blue) ;
+    color: black ;
+}
 
+.heading-article{
+  margin-bottom: 1rem;
+  
 }
 
 .hero article img {
@@ -207,15 +212,16 @@ a:active {
   text-align: center;
   margin: 0 auto;
   padding: 2em;
-  background-color: var(--fourth-color);
+  background-color: lightyellow;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin-top: 20px;
 }
 
 .contact-info #page-title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: var(--blue);
+  color: black;
 }
 
 .contact-info p {
@@ -239,8 +245,10 @@ a:active {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  background-color: lightgrey;
+  background-color: lightyellow;
   border-radius: 8px;
+  padding-top: 20px;
+  
 }
 
 .employee-gallery figure {
@@ -262,7 +270,11 @@ a:active {
 
 .contact-form {
   margin-top: 0.01rem;
-  height: auto
+  height: auto;
+}
+
+.contact-form form{
+  background-color: rgb(227, 227, 172);
 }
 
 .form-map-together {
@@ -392,3 +404,172 @@ iframe {
   border: 1px solid #ccc;
   height: 50%;
 }
+
+/* -------------------------- Week 6 -------------------------------*/
+
+.home-hero {
+    position: relative;
+    
+}
+
+.home-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: lightyellow;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 75%;
+  border-radius: 8px;
+}
+
+.grid-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.visitation-link {
+  text-align: center;
+  background-color: lightyellow;
+  padding: 2rem;
+}
+
+.visitation-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--first-color);
+
+  border-radius: 5px;
+}
+.visitation-button:hover{
+  background-color: lightgreen;
+  color: rgb(208, 33, 208);
+ 
+}
+.visitation-link a{
+  color: white;
+}
+
+.hero-section {
+  position: relative;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.hero-heading {
+  position: absolute;
+  background-color: var(--third-color);
+  opacity: 0.7;
+  margin-bottom: 1.2rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  opacity: 0.7;
+  padding-top: 10px;
+  color: black;
+  
+}
+.name-spacing-down{
+  margin-top: 30px;
+}
+
+
+.call-to-action{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: lightyellow;
+  padding-bottom: 30px;
+}
+
+.call-to-action .button{
+  display: inline-block;
+  background-color: #006400;
+  color: white;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+}
+
+.button:hover, .button{
+  background-color: lightgreen;
+  color: rgb(208, 33, 208);
+}
+
+.trip-flex-method {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sizing-images {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trip-descriptions {
+  background-color: lightyellow;
+  margin-top: 40px;
+}
+
+.trip-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: lightyellow;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+
+}
+
+.trip-table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+
+.trip-table caption {
+  margin-bottom: 1rem;
+}
+
+.trip-table th,
+.trip-table td, caption {
+  margin-top: 40px;
+}
+
+.center-the-table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trip-table thead{
+  background-color: rgb(160, 183, 206);
+}
+
+.trip-table tbody{
+  background-color: rgb(255, 255, 255);
+}
+
