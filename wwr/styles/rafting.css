@@ -61,22 +61,34 @@ nav, p, section, article {
     width: 100%;
     height: auto;
     position: relative;
+    height: auto;
 }
 
-#page-title, .heading-article {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: rgba(71, 192, 232, 0.85);
-    color: black ;
-}
 
 .heading-article{
-  margin-bottom: 1rem;
-  
+  position: relative;
+    width: 100%;
+    /* padding: 16px; */
+    text-align: center;
+    opacity: 0.7;
+    color: black;
+    background-color: var(--third-color);
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+#page-title{
+  position: relative;
+    width: 100%;
+    /* padding: 16px; */
+    text-align: center;
+    opacity: 0.7;
+    color: black;
+    background-color: var(--third-color);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+
 }
 
 .hero article img {
@@ -121,6 +133,7 @@ footer nav img{
 .history-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 430px;
 }
 
 .history-grid h2{
@@ -129,20 +142,25 @@ footer nav img{
     text-align: center;
 }
 
-.history-grid img{
+.history-grid > img{
     grid-column: 2 / 2;
+    align-items: center;
+    width: 300px;
+    margin-top: 40px;
 }
 
 .paragraph1 {
     text-align: left;
     grid-column: 1;
     grid-row: 2;
+    margin-top: 24px;
 }
 
 .paragraph2 {
     text-align: center;
     grid-column: 3;
     grid-row: 2;
+    margin-top: 28px;
 }
 
 .adventure-section {
@@ -156,6 +174,30 @@ footer nav img{
     width: 8rem;
     height: 8rem;
     
+}
+
+.hero-article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: 	#D4D4D4; 
+  opacity: 0.95;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 section h2{
@@ -178,11 +220,25 @@ section h2{
     background-color: lightyellow;
 }
 
+
 .history{
     background-color: beige;
     margin-bottom: 3.75rem;
+    margin-top: 3rem;
 }
 
+.fix-hero {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.fix-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /*------------------------------------------------------------------------------------*/
 /* CSS link fix */
 a:link {
